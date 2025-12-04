@@ -1,0 +1,86 @@
+[
+  {
+    "title": "HTML",
+    "image": "html.png",
+    "description": "Linguagem de marcação usada para estruturar páginas web.",
+    "rating": 5
+  },
+  {
+    "title": "CSS",
+    "image": "css.png",
+    "description": "Linguagem de estilos utilizada para definir o visual das páginas web.",
+    "rating": 5
+  },
+  {
+    "title": "Tailwind CSS",
+    "image": "tailwind.png",
+    "description": "Framework de CSS utilitária para criar interfaces modernas de forma rápida.",
+    "rating": 5
+  },
+  {
+    "title": "JavaScript",
+    "image": "javascript.png",
+    "description": "Linguagem de programação responsável pela interatividade nas páginas web.",
+    "rating": 5
+  },
+  {
+    "title": "TypeScript",
+    "image": "typescript.png",
+    "description": "Superset do JavaScript que adiciona tipagem estática e maior segurança.",
+    "rating": 4
+  },
+  {
+    "title": "JSON",
+    "image": "json.png",
+    "description": "Formato leve de troca de dados usado amplamente em APIs.",
+    "rating": 4
+  },
+  {
+    "title": "API RESTful",
+    "image": "api.png",
+    "description": "Padrão arquitetural usado para criação de serviços web escaláveis.",
+    "rating": 5
+  },
+  {
+    "title": "Swagger",
+    "image": "swagger.png",
+    "description": "Ferramenta para documentação e teste de APIs REST.",
+    "rating": 4
+  },
+  {
+    "title": "GitHub",
+    "image": "github.png",
+    "description": "Plataforma de hospedagem de código e colaboração baseada em Git.",
+    "rating": 5
+  },
+  {
+    "title": "Codespaces",
+    "image": "codespaces.png",
+    "description": "Ambiente de desenvolvimento na cloud integrado com GitHub.",
+    "rating": 4
+  },
+  {
+    "title": "GitHub Pages",
+    "image": "github-pages.png",
+    "description": "Serviço do GitHub para hospedar websites estáticos.",
+    "rating": 4
+  },
+  {
+    "title": "React.js",
+    "image": "react.png",
+    "description": "Biblioteca JavaScript para construção de interfaces de utilizador.",
+    "rating": 5
+  },
+  {
+    "title": "Next.js",
+    "image": "nextjs.png",
+    "description": "Framework React com funcionalidades server-side e rotas otimizadas.",
+    "rating": 5
+  },
+  {
+    "title": "Vercel",
+    "image": "vercel.png",
+    "description": "Plataforma de deploy otimizada para projetos Next.js e aplicações modernas.",
+    "rating": 5
+  }
+]
