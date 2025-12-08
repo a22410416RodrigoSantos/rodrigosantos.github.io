@@ -8,7 +8,7 @@ const caracteristicas = [
         'TypeScript Seguro e Escalável.',
         'Comunidade Ativa e Popularidade.'
     ]
-export default function Page() {
+export default function Caracteristicas() {
     return (
         <>
             <h2>Características do React e Next.js</h2>
