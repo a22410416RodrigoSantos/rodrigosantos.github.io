@@ -7,7 +7,7 @@ export default function DescricaoProjetos() {
         Aqui pode encontrar alguns dos projetos que desenvolvi durante a
         disciplina. Para ver todos os meus projetos, visite o meu
         <a
-          href="https://teu-github-pages.github.io"
+          href="https://github.com/dashboard"
           target="_blank"
           className="text-blue-600 underline ml-1"
         >

@@ -1,4 +1,4 @@
-import MagiaDoJSX from '@/components/MagiaDoJSX';
+import MagiaDoJSX from '@/components/MagiaDoJSX/MagiaDoJSX';
 import DescricaoProjetos from "@/components/DescricaoProjetos";
 
 export default function ProjetosPage() {
