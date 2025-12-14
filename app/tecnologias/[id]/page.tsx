@@ -2,7 +2,6 @@ import tecnologias from "@/app/data/tecnologias.json";
 import TecnologiaDetailsCard from "@/components/TecnologiaDetailsCard";
 import Link from "next/link";
 
-
 export default function TecnologiaPage({ params }: { params: { id: string } }) {
   const index = Number(params.id);
 
@@ -20,7 +19,6 @@ export default function TecnologiaPage({ params }: { params: { id: string } }) {
         description={tecnologia.description}
         rating={tecnologia.rating}
       />
-
       <Link href="/tecnologias" className="block mt-4 text-blue-600">
         Voltar
       </Link>
