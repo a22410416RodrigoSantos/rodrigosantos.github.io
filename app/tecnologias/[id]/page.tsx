@@ -2,20 +2,15 @@ import tecnologias from "@/app/data/tecnologias.json";
 import TecnologiaDetailsCard from "@/components/TecnologiaDetailsCard";
 import Link from "next/link";
 
-interface Params {
-  params: {
-    id: string;
-  };
-}
 
-export default function TecnologiaPage({ params }: Params) {
-  const id = Number(params.id);
+export default function TecnologiaPage({ params }: { params: { id: string } }) {
+  const index = Number(params.id);
 
-  const tecnologia = tecnologias[id];
-
-  if (!tecnologia) {
-    return <p>Tecnologia não encontrada.</p>;
+  if (isNaN(index) || index < 0 || index >= tecnologias.length) {
+    return <p>Tecnologia não encontrada</p>;
   }
+
+  const tecnologia = tecnologias[index];
 
   return (
     <div className="p-4">
@@ -26,10 +21,7 @@ export default function TecnologiaPage({ params }: Params) {
         rating={tecnologia.rating}
       />
 
-      <Link
-        href="/tecnologias"
-        className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-      >
+      <Link href="/tecnologias" className="block mt-4 text-blue-600">
         Voltar
       </Link>
     </div>
