@@ -2,11 +2,13 @@ import tecnologias from "@/app/data/tecnologias.json";
 import TecnologiaDetailsCard from "@/components/TecnologiaDetailsCard";
 import Link from "next/link";
 
-export default function TecnologiaPage({ params }: { params: { id: string } }) {
-  const index = Number(params.id);
+export default async function TecnologiaPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const index = Number(id);
 
+  // Validação de índice
   if (isNaN(index) || index < 0 || index >= tecnologias.length) {
-    return <p>Tecnologia não encontrada</p>;
+    return <p className="text-center mt-8">Tecnologia não encontrada</p>;
   }
 
   const tecnologia = tecnologias[index];
@@ -19,9 +21,11 @@ export default function TecnologiaPage({ params }: { params: { id: string } }) {
         description={tecnologia.description}
         rating={tecnologia.rating}
       />
-      <Link href="/tecnologias" className="block mt-4 text-blue-600">
-        Voltar
-      </Link>
+      <div className="text-center mt-4">
+        <Link href="/tecnologias" className="text-blue-600 hover:underline">
+          Voltar
+        </Link>
+      </div>
     </div>
   );
 }
