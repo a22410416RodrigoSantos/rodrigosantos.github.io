@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContadorPersonalizado from "./ContadorPersonalizado";
 
 interface TecnologiaDetailsProps {
   title: string;
@@ -32,10 +33,15 @@ export default function TecnologiaDetailsCard({
       <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6 text-center">
         {description}
       </p>
-      <div className="text-center">
+      <div className="text-center mb-8">
         <p className="text-xl font-semibold text-gray-800 dark:text-gray-100">
           Nível de domínio: {"⭐".repeat(rating)} ({rating}/5)
         </p>
+      </div>
+
+      {/* Contador de likes */}
+      <div className="flex justify-center">
+        <ContadorPersonalizado title={title} />
       </div>
     </div>
   );

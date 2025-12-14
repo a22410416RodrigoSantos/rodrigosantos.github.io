@@ -1,0 +1,61 @@
+{
+  "categorias": [
+    {
+      "id": "roupa",
+      "nome": "Roupa",
+      "logo": "https://i.etsystatic.com/22407440/r/il/c950cc/7148145159/il_fullxfull.7148145159_kg56.jpg"
+    },
+    {
+      "id": "acessorios",
+      "nome": "Acessórios",
+      "logo": "categoria-acessorios.jpg"
+    },
+    {
+      "id": "canecas",
+      "nome": "Canecas",
+      "logo": "categoria-canecas.jpg"
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Hoodie DEISI Programming",
+      "preco": "45€",
+      "imagem": "hoodie1.jpg",
+      "categoria": "roupa",
+      "descricao": "Hoodie confortável com logo DEISI e frase 'Code or Die'."
+    },
+    {
+      "id": 2,
+      "nome": "T-Shirt Computer Science",
+      "preco": "25€",
+      "imagem": "tshirt1.jpg",
+      "categoria": "roupa",
+      "descricao": "T-shirt clássica para fãs de algoritmos."
+    },
+    {
+      "id": 3,
+      "nome": "Caneca Bug Hunter",
+      "preco": "15€",
+      "imagem": "caneca1.jpg",
+      "categoria": "canecas",
+      "descricao": "Caneca perfeita para o café durante o debugging."
+    },
+    {
+      "id": 4,
+      "nome": "Mochila Developer",
+      "preco": "35€",
+      "imagem": "mochila1.jpg",
+      "categoria": "acessorios",
+      "descricao": "Mochila resistente com compartimento para laptop."
+    },
+    {
+      "id": 5,
+      "nome": "Hoodie Stanford CS Style",
+      "preco": "50€",
+      "imagem": "hoodie2.jpg",
+      "categoria": "roupa",
+      "descricao": "Edição limitada inspirada em universidades tech."
+    }
+  ]
+}
