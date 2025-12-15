@@ -61,6 +61,9 @@ export default function RootLayout({
               <Link href="/loja" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Loja
               </Link>
+              <Link href="/produtos" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                Produtos
+              </Link>
             </nav>
           </div>
         </header>

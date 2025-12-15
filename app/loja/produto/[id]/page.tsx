@@ -25,7 +25,7 @@ export default async function ProdutoPage({ params }: { params: Promise<{ id: st
         </Link>
         <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-10 grid md:grid-cols-2 gap-10">
           <Image
-            src={`/shop/${produto.imagem}`}
+            src={`https://deisishop.pythonanywhere.com${produto.imagem}`}
             alt={produto.nome}
             width={600}
             height={600}
