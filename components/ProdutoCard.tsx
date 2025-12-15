@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Product } from "@/models/interfaces";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 interface ProdutoCardProps {
   produto: Product;
@@ -22,9 +24,17 @@ export default function ProdutoCard({ produto }: ProdutoCardProps) {
           {produto.title}
         </h3>
 
-        <p className="text-3xl font-bold text-blue-600 dark:text-blue-400 mt-auto">
+        <p className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-6">
           {Number(produto.price).toFixed(2)}€
         </p>
+
+        <div className="mt-auto">
+          <Link href={`/produtos/${produto.id}`}>
+            <Button variant="outline" className="w-full">
+              +info
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );
