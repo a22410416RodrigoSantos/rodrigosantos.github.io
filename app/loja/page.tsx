@@ -1,5 +1,4 @@
 import shopData from "@/app/data/shop.json";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function LojaPage() {
@@ -19,25 +18,20 @@ export default function LojaPage() {
             Ver Categorias
           </Link>
         </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {produtos.map((produto) => (
             <Link key={produto.id} href={`/loja/produto/${produto.id}`}>
-              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden cursor-pointer">
-                <Image
-                  src={produto.imagem}
-                  alt={produto.nome}
-                  width={400}
-                  height={400}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    {produto.nome}
-                  </h3>
-                  <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                    {produto.preco}
-                  </p>
+              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow p-6 text-center cursor-pointer">
+                <div className="w-full h-64 bg-gray-200 dark:bg-gray-700 rounded-xl flex items-center justify-center mb-4">
+                  <span className="text-6xl text-gray-400">📦</span>
                 </div>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  {produto.nome}
+                </h3>
+                <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                  {produto.preco}
+                </p>
               </div>
             </Link>
           ))}

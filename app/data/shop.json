@@ -2,60 +2,52 @@
   "categorias": [
     {
       "id": "roupa",
-      "nome": "Roupa",
-      "logo": "https://i.etsystatic.com/22407440/r/il/c950cc/7148145159/il_fullxfull.7148145159_kg56.jpg"
+      "nome": "Roupa"
     },
     {
       "id": "acessorios",
-      "nome": "Acessórios",
-      "logo": "categoria-acessorios.jpg"
+      "nome": "Acessórios"
     },
     {
       "id": "canecas",
-      "nome": "Canecas",
-      "logo": "categoria-canecas.jpg"
+      "nome": "Canecas"
     }
   ],
   "produtos": [
     {
       "id": 1,
-      "nome": "Hoodie DEISI Programming",
+      "nome": "Hoodie Programming",
       "preco": "45€",
-      "imagem": "hoodie1.jpg",
       "categoria": "roupa",
-      "descricao": "Hoodie confortável com logo DEISI e frase 'Code or Die'."
+      "descricao": "Hoodie confortável com tema de programação."
     },
     {
       "id": 2,
-      "nome": "T-Shirt Computer Science",
+      "nome": "T-Shirt Coder",
       "preco": "25€",
-      "imagem": "tshirt1.jpg",
       "categoria": "roupa",
-      "descricao": "T-shirt clássica para fãs de algoritmos."
+      "descricao": "T-shirt clássica para developers."
     },
     {
       "id": 3,
       "nome": "Caneca Bug Hunter",
       "preco": "15€",
-      "imagem": "caneca1.jpg",
       "categoria": "canecas",
-      "descricao": "Caneca perfeita para o café durante o debugging."
+      "descricao": "Caneca ideal para debugging."
     },
     {
       "id": 4,
       "nome": "Mochila Developer",
       "preco": "35€",
-      "imagem": "mochila1.jpg",
       "categoria": "acessorios",
-      "descricao": "Mochila resistente com compartimento para laptop."
+      "descricao": "Mochila com espaço para laptop."
     },
     {
       "id": 5,
-      "nome": "Hoodie Stanford CS Style",
-      "preco": "50€",
-      "imagem": "hoodie2.jpg",
-      "categoria": "roupa",
-      "descricao": "Edição limitada inspirada em universidades tech."
+      "nome": "Caneca Coffee Into Code",
+      "preco": "18€",
+      "categoria": "canecas",
+      "descricao": "Caneca motivacional para programadores."
     }
   ]
 }
